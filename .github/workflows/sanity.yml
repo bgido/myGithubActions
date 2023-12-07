@@ -20,24 +20,24 @@ jobs:
         DEFAULT_BRANCH: main
         VALIDATE_ALL_CODEBASE: false
 
-    - name: Run Python script
-      run: |
-        python3 path/to/your/python_script.py
-      working-directory: ${{ github.workspace }}
+    # - name: Run Python script
+    #   run: |
+    #     python3 path/to/your/python_script.py
+    #   working-directory: ${{ github.workspace }}
 
     - name: Run Go script
       run: |
-        go run path/to/your/go_script.go
+        go run /bgido/SDK-GO.git/main.go
       working-directory: ${{ github.workspace }}
 
-    - name: Run Node.js script
-      run: |
-        npm install
-        node path/to/your/node_script.js
-      working-directory: ${{ github.workspace }}
+    # - name: Run Node.js script
+    #   run: |
+    #     npm install
+    #     node path/to/your/node_script.js
+    #   working-directory: ${{ github.workspace }}
 
-    - name: Run TypeScript script
-      run: |
-        npm install -g typescript
-        tsc path/to/your/typescript_script.ts
-      working-directory: ${{ github.workspace }}
+    # - name: Run TypeScript script
+    #   run: |
+    #     npm install -g typescript
+    #     tsc path/to/your/typescript_script.ts
+    #   working-directory: ${{ github.workspace }}
